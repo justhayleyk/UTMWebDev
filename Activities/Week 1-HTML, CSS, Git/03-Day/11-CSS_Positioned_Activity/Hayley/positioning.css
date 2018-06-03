@@ -1,0 +1,46 @@
+body {
+    margin: 100px;
+    margin-left: 100px;
+    width: 800px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    line-height: 1.7em;
+}
+
+.greyboxfixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 125px;
+    background-color: pink;
+    text-align: center;
+    line-height: 75px;
+    
+}
+
+.lightgreyrelative {
+    background-color: green;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.darygreyabsolute {
+    background-color: lightblue;
+    position: absolute;
+    right: 445px;
+    bottom: 0px;
+    width: 300px;
+    height: 150px;
+    z-index: 2;
+    text-align: center;
+    line-height: 100px;
+}
+
+h2 {
+    font-size: 25px;
+    padding: 10px 0px;
+}
