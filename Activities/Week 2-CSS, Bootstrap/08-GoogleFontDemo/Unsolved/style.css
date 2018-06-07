@@ -1,0 +1,27 @@
+/**
+ * Google Fonts Demo
+ **/
+
+/* Add in the Google Fonts of your choice */
+
+/* Typography */
+
+h1, h2, h3, h4 {
+    font-family: 'Permanent Marker', cursive;
+    color: rgb(5, 21, 90);
+}
+
+p {
+    font-family: 'Questrial', sans-serif;
+    line-height: 1.3em;
+}
+
+p .thought3 {
+    color: lightgreen;
+}
+
+/* Body Style */
+
+body {
+    margin:30px;
+}
