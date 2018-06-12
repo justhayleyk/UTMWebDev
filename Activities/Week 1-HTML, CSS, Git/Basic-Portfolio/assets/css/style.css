@@ -20,10 +20,9 @@ body {
 
 header {
   margin: 0 auto;
-  padding: 0 475px;
-  background-color: #A9BBB8;
+  padding: 0 200px;
+  background-color: #a9bbb8;
   margin-bottom: 25px;
-
 }
 
 header::after {
@@ -60,7 +59,7 @@ nav a {
 }
 
 nav a:hover {
-  color: coral;
+  color: #eb7e65;
 }
 
 .hvr-shadow {
@@ -74,20 +73,23 @@ nav a:hover {
   -webkit-transition-property: box-shadow;
   transition-property: box-shadow;
 }
-.hvr-shadow:hover, .hvr-shadow:focus, .hvr-shadow:active {
+.hvr-shadow:hover,
+.hvr-shadow:focus,
+.hvr-shadow:active {
   box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
 }
 
 .about,
 .portfolio,
 .Contact {
-  margin: auto;
+  /* margin: auto; */
+  margin-bottom: 55px;
   padding: 20px;
   padding-bottom: 50px;
-  background-color: #D4E3DE;
-  border: 2px solid #D4E3DE;
+  background-color: #d4e3de;
+  border: 2px solid #d4e3de;
   border-radius: 10px;
-  line-height: 1.7em;
+  line-height: 1.3em;
 }
 
 /* Main Typography */
@@ -115,14 +117,8 @@ p {
 }
 
 a {
-  color: #A5B996;
+  color: #a5b996;
   font-family: 'Poppins', sans-serif;
-}
-
-ul {
-}
-
-li {
 }
 
 hr {
@@ -155,7 +151,6 @@ hr {
   color: white;
   text-align: center;
 }
-
 
 /* FORM */
 input {
@@ -192,7 +187,7 @@ button {
   bottom: 0;
   width: 100%;
   background-color: #666666;
-  border-top: 5px solid #A5B996;
+  border-top: 5px solid #a5b996;
   padding: 25px 0;
 }
 

@@ -1,0 +1,27 @@
+/* MY COLOURS
+#EB7E65 -- Coral
+#F9BD95 -- Peach
+#F8DCB7 -- Pale Yellow
+#A5B996 -- Olive
+#A9BBB8 -- Grey Blue 
+#D4E3DE -- Pale Grey Blue */
+
+/* HEADER */
+header {
+  background-color: #a5b996;
+}
+
+.jumbotron h1,
+p {
+  color: white;
+}
+
+.jumbotron {
+  background-image: url(/images/botanical-cactuses-close-up-305827.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* TYPOGRAPHY */
+
+/* CARDS */
