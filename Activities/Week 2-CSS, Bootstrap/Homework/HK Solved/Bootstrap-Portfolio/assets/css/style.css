@@ -1,0 +1,62 @@
+/* MY COLOURS
+#EB7E65 -- Coral
+#F9BD95 -- Peach
+#F8DCB7 -- Pale Yellow
+#A5B996 -- Olive
+#A9BBB8 -- Grey Blue 
+#D4E3DE -- Pale Grey Blue */
+
+/* NAV */
+nav {
+  background-color: #fcdfcc;
+}
+
+nav a {
+  color: #eb7e65;
+}
+
+nav a:hover {
+  color: #333;
+}
+
+/* HEADER */
+.bgimage {
+  width: 100%;
+  height: 500px;
+  background: url('../images/Hayley-Header-Img.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-bottom: 25px;
+}
+.bgimage h1 {
+  color: white;
+  font-size: 50px;
+  margin-top: 175px;
+}
+
+.bgimage h3 {
+  color: rgb(85, 85, 85);
+  font-size: 35px;
+}
+
+.btn-first {
+  background-color: #eb7e65;
+  color: white;
+}
+
+.btn-second {
+  border: white solid 2px;
+  background-color: rgba(255, 255, 255, 0.459);
+  color: #eb7e65;
+}
+/* \FEATURES */
+
+.feature-card {
+  padding: 0 10px;
+}
+
+.feature-card img {
+  widows: 200px;
+}
