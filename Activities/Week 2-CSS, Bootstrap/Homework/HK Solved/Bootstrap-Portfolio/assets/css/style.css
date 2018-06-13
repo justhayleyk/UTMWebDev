@@ -6,6 +6,10 @@
 #A9BBB8 -- Grey Blue 
 #D4E3DE -- Pale Grey Blue */
 
+.wrapper {
+  margin: 0 auto;
+}
+
 /* NAV */
 nav {
   background-color: #fcdfcc;
@@ -23,7 +27,7 @@ nav a:hover {
 .bgimage {
   width: 100%;
   height: 500px;
-  background: url('../images/Hayley-Header-Img.jpg');
+  background: url("../images/Hayley-Header-Img.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -51,6 +55,7 @@ nav a:hover {
   background-color: rgba(255, 255, 255, 0.459);
   color: #eb7e65;
 }
+
 /* \FEATURES */
 
 .feature-card {
