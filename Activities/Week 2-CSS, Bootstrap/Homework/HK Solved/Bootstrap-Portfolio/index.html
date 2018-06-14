@@ -5,12 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- CSS -->
   <link rel="stylesheet" href="assets/css/reset.css">
-
-  <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
     crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
   <title>Hayley's Bootstrap Portfolio</title>
 </head>
 
@@ -24,13 +25,13 @@
       </a>
       <ul class="nav justify-content-end">
         <li class="nav-item">
-          <a class="nav-link active" href="#">About Hayley</a>
+          <a class="nav-link active" href="/index.html">About Hayley</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Portfolio</a>
+          <a class="nav-link" href="/portfolio.html">Portfolio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="/contact.html">Contact</a>
         </li>
       </ul>
     </nav>
@@ -44,9 +45,12 @@
         <div class="row">
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <h1 class="text-center">Hello, I’m Hayley</h1>
-            <h3 class="text-center">a creatively inclined web designer</h3>
-            <a href="#" class="btn btn-first btn-large shadow">Work's</a>
-            <a href="#" class="btn btn-second btn-large shadow">Connect</a>
+            <h3 class="text-center">a creatively inclined web designer
+              <br>
+              <br>
+              <a href="#" class="btn btn-first btn-large shadow">Work's</a>
+              <a href="#" class="btn btn-second btn-large shadow">Connect</a>
+            </h3>
           </div>
         </div>
       </div>
@@ -54,14 +58,23 @@
     <!-- ABOUT HAYLEY BLURB -->
     <section class="aboutHayley">
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-12">
-            <h2>It is so nice you are here</h2>
-            <p>My journey started with my love of design in highschool, but a university degree later and I was not in design.
-              Since then I have dabbled in an array of careers but I alway gravitate back to design. I start as a freelance
-              designer nearly 3 years ago, I've done remote work for agencies, consulted for startups, and collaborated with
-              talented people to create digital products for both businesses. I'm habitually learning new things to expand
-              my knowledge, hense the future title of Full Stack Developer.</p>
+        <div class="row justify-content-md-center">
+          <div class="col-md-8">
+            <h1>It is so nice you're here</h1>
+            <div class="row justify-content-md-start">
+              <div class="col-md-4">
+                <img class="aboutHayleyImg" src="/assets/images/HayleyK.jpg" alt="">
+              </div>
+              <div class="col-md-8">
+                <p>My journey started with my love of design in highschool, but a university degree later and I was not in design.
+                  Since then I have dabbled in an array of careers but I alway gravitate back to design. I start as a freelance
+                  designer nearly 3 years ago, I've done remote work for agencies, consulted for startups, and collaborated
+                  with talented people to create digital products for both businesses. I'm habitually learning new things
+                  to expand my knowledge, hense the future title of Full Stack Developer.</p>
+              </div>
+            </div>
+
+
           </div>
         </div>
       </div>
@@ -70,15 +83,15 @@
     <!-- FEATURES -->
     <section class="features">
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-1"></div>
+        <div class="row justify-content-md-center">
           <div class="col-md-10">
             <div class="row">
+
               <div class="feature-card col-md-4 text-center">
                 <i>
                   <img src="https://png.icons8.com/dotty/100/000000/design.png">
                 </i>
-                <h5>Designer</h5>
+                <h2>Designer</h2>
                 <p>I love simple clean designs which envoke emotions and thoughtful interactions</p>
                 <h5>I enjoy designing:</h5>
                 <p>Websites, Print Design, Logos</p>
@@ -95,7 +108,7 @@
                 <i>
                   <img src="https://png.icons8.com/wired/100/000000/web-design.png">
                 </i>
-                <h5>Front End Developer</h5>
+                <h2>Front End Developer</h2>
                 <p>I tend to code things from scratch, and enjoy bringing the design to life in the browser.</p>
                 <h5>Languages I know</h5>
                 <p>HTML, CSS, Sass, JavaScript</p>
@@ -113,7 +126,7 @@
                 <i>
                   <img src="https://png.icons8.com/ios/100/000000/source-code.png">
                 </i>
-                <h5>Back End Developer</h5>
+                <h2>Back End Developer</h2>
                 <p>I will be learning all about back-end development and I am really looking forward to it.</p>
                 <h5>What I'll learn</h5>
                 <p>PHP, Ruby, Python, Java, MySQL</p>
@@ -121,13 +134,67 @@
 
             </div>
           </div>
-          <div class="col-md-1"></div>
         </div>
       </div>
     </section>
 
     <!-- FOOTER -->
+    <section class="footer">
+      <div class="container-fluid">
+        <div class="row justify-content-md-center">
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6">
+                <ul>
+                  <a href="/index.html">
+                    <li>About</li>
+                  </a>
+                  <a href="/portfolio.html">
+                    <li>Portfolio</li>
+                  </a>
+                  <a href="/contact.html">
+                    <li>Contact</li>
+                  </a>
 
+
+
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <h3>Let's Connect on Social</h3>
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/HayleyJCSweet">
+                  <img class="socialFooter" src="https://png.icons8.com/metro/50/ffffff/facebook.png">
+                </a>
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/justhayleys/">
+                  <img class="socialFooter" src="https://png.icons8.com/windows/50/ffffff/instagram-new.png">
+                </a>
+                <!-- Twitter -->
+                <a href="https://twitter.com/JustHayleyS">
+                  <img class="socialFooter" src="https://png.icons8.com/metro/50/ffffff/twitter.png">
+                </a>
+                <!-- GitHub -->
+                <a href="https://github.com/CopperCo">
+                  <img class="socialFooter" src="https://png.icons8.com/ios-glyphs/50/ffffff/github.png">
+                </a>
+                <!-- Email -->
+                <a href="mailto:mrs.kornilenko@gmail.com">
+                  <img class="socialFooter" src="https://png.icons8.com/ios/50/ffffff/secured-letter.png">
+                </a>
+
+
+
+
+              </div>
+            </div>
+            <div class="row">
+              Designed from nothing by Hayley K. &copy; 2018
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
 

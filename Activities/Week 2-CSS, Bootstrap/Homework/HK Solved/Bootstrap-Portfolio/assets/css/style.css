@@ -6,6 +6,13 @@
 #A9BBB8 -- Grey Blue 
 #D4E3DE -- Pale Grey Blue */
 
+/* TYPOGRAPHY */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* SIZING */
+
 .wrapper {
   margin: 0 auto;
 }
@@ -27,21 +34,20 @@ nav a:hover {
 .bgimage {
   width: 100%;
   height: 500px;
-  background: url("../images/Hayley-Header-Img.jpg");
+  background: url("../images/Hayley-Buns.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
   background-size: cover;
   background-attachment: fixed;
-  margin-bottom: 25px;
 }
 .bgimage h1 {
-  color: white;
+  color: black;
   font-size: 50px;
   margin-top: 175px;
 }
 
 .bgimage h3 {
-  color: rgb(85, 85, 85);
+  color: black;
   font-size: 35px;
 }
 
@@ -56,7 +62,38 @@ nav a:hover {
   color: #eb7e65;
 }
 
+/* ABOUT HAYLEY */
+.justify-content-md-start {
+  justify-content: left;
+}
+
+.aboutHayley {
+  padding: 50px 0px;
+  background-color: #f9bd95;
+  text-align: center;
+}
+
+.aboutHayley h1 {
+  text-decoration: #333;
+}
+
+.aboutHayleyImg {
+  width: 200px;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 3px 3px 5px rgb(136, 136, 136);
+}
+
 /* \FEATURES */
+
+.features {
+  /* position: absolute; */
+  background-color: #d4e3de;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-top: -5px;
+  /* z-index: 2; */
+}
 
 .feature-card {
   padding: 0 10px;
@@ -64,4 +101,57 @@ nav a:hover {
 
 .feature-card img {
   widows: 200px;
+}
+
+.features h5 {
+  font-weight: 500;
+}
+
+/* FORM */
+
+label {
+  padding-top: 10px;
+}
+
+#message {
+  height: 200px;
+  margin-bottom: 25px;
+}
+
+.submit {
+  background-color: #eb7e65;
+  border: #eb7e65 1px solid;
+  box-shadow: 3px 3px 5px #ccc;
+}
+
+.submit:hover {
+  background-color: #f9bd95;
+  border: #f9bd95 1px solid;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #333;
+  color: white;
+  padding-top: 35px;
+  padding-bottom: 20px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer a:hover {
+  color: #eb7e65;
+}
+
+.socialFooter {
+  height: 35px;
+}
+
+.socialFooter:hover {
+  background-color: #eb7e65;
+  padding: 5px;
+  border-radius: 50%;
 }
