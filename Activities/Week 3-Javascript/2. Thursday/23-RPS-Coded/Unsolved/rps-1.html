@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Rock Paper Scissors Part 1</title>
+</head>
+
+<body>
+  <h1>Do you choose rock, paper or scissors? click r,p or s</h1>
+  <div id="game">
+
+  </div>
+
+  <script type="text/javascript">
+
+    // Determine the Human's Throw
+
+    var userChoice;
+
+    document.onkeyup = function (event) {
+      userChoice = event.key;
+      console.log("User choice is: " + userChoice)
+      if ((userChoice == "r") || (userChoice == "p") || (userChoice == "s")) {
+
+        // Determine the Computers Throw
+        var computerThrow = ["r", "p", "s"]
+        var randThrow = computerThrow[Math.floor(Math.random() * computerThrow.length)];
+        console.log("Computer choice is: " + randThrow)
+
+        //Compare Throws
+
+        if ((userChoice == "r" && randThrow == "s") || (userChoice == "p" && randThrow == "r") || (userChoice == "s" && randThrow == "p")) {
+          alert("You win this one")
+        } else if ((userChoice == "r" && randThrow == "p") || (userChoice == "p" && randThrow == "s") || (userChoice == "s" && randThrow == "r")) {
+          alert("You lose this one")
+        } else {
+          alert("We draw")
+        }
+
+      } else {
+        alert("You need to pick R, S or P")
+      }
+
+
+
+
+    }
+
+  </script>
+
+</body>
+
+</html>
