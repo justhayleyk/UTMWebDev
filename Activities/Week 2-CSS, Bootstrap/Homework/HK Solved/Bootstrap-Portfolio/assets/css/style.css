@@ -163,6 +163,10 @@ label {
 }
 
 /* FOOTER */
+#footerSC col-sm col-xs {
+  display: inline;
+}
+
 .footer {
   background-color: #333;
   color: white;
