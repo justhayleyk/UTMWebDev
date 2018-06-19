@@ -1,67 +1,119 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>My First Object</title>
-  </head>
-  <body>
 
-    <script>
+<head>
+  <meta charset="UTF-8">
+  <title>My Car JavaScript Game</title>
+</head>
 
-      var car = {
-        make: "Honda",
-        model: "Fit",
-        color: "Blue Raspberry",
-        mileage: 3000,
-        isWorking: true,
-
-        driveToWork: function() {
-
-          alert("Old Mileage: " + this.mileage);
-
-          this.mileage = this.mileage + 8;
-
-          alert("New mileage: " + this.mileage);
-        },
-
-        driveAroundWorld: function() {
-
-          alert("Old Mileage: " + this.mileage);
-
-          this.mileage = this.mileage + 24000;
-
-          alert("New Mileage: " + this.mileage);
-          alert("Car needs a tuneup!");
-
-          this.isWorking = false;
-        },
-
-        getTuneUp: function() {
-          alert("Car is ready to go!");
-          this.isWorking = true;
-        },
-
-        honk: function() {
-          alert("Honk! Honk!");
-        }
-      };
+<body>
+  <h1>Welcome to Hayley's Java Car Game</h1>
+  <hr>
+  <img src="sportive-car.png" alt="" width="200px">
+  <p>To play:</p>
+  <p>You can Honk the horn by pressing h</p>
+  <p>You can drive to work by press d</p>
+  <p>You can drive around the world by pressing w</p>
+  <p>Remember after you drive a long time you will need a tune up. To get the car tuned up press t.</p>
 
 
-      // How would we log...
+  <script>
 
-      // The car's make?
+    var car = {
+      make: "Honda",
+      model: "Fit",
+      color: "Blue Raspberry",
+      mileage: 3000,
+      isWorking: true,
 
-      // The car's model?
+      driveToWork: function () {
 
-      // The car's mileage?
+        alert("Old Mileage: " + this.mileage);
 
-      // How would we run the car's driveToWork method?
+        this.mileage = this.mileage + 8;
 
-      // How would we run the car's driveAroundWorld method?
+        alert("New mileage: " + this.mileage);
+      },
 
-      // How would we run the getTuneUp method?
+      driveAroundWorld: function () {
 
-    </script>
-    
-  </body>
+        alert("Old Mileage: " + this.mileage);
+
+        this.mileage = this.mileage + 24000;
+
+        alert("New Mileage: " + this.mileage);
+        alert("Car needs a tuneup!");
+
+        this.isWorking = false;
+      },
+
+      getTuneUp: function () {
+        alert("Car is ready to go!");
+        this.isWorking = true;
+      },
+
+      honk: function () {
+        alert("Honk! Honk!");
+      }
+    };
+
+
+    //THE CAR GAME
+    var userChoice;
+
+    document.onkeyup = function (event) {
+      userChoice = event.key;
+      console.log("User choice is: " + userChoice)
+      if (userChoice == "h") {
+        car.honk()
+      } else if (userChoice == "d") {
+        car.driveToWork()
+      } else if (userChoice == "w") {
+        car.driveAroundWorld()
+        console.log("Car is working: " + car.isWorking)
+      } else if (userChoice == "t") {
+        car.isWorking = true
+        console.log("Car is working: " + car.isWorking)
+      }
+    }
+
+
+    // document.onkeyup = function (event) {
+    //   userChoice = event.key;
+    //   console.log("User choice is: " + userChoice)
+    //   if (userChoice == "t") {
+    //     this.isWorking = true
+    //   }
+    // }
+
+
+
+    // How would we log...
+
+    // // The car's make?
+    // console.log(car.make);
+
+
+    // // The car's model?
+    // console.log(car.model);
+
+
+    // // The car's mileage?
+    // console.log(car.mileage);
+
+
+    // // How would we run the car's driveToWork method?
+    // car.driveToWork()
+
+
+    // // How would we run the car's driveAroundWorld method?
+    // car.driveAroundWorld()
+
+    // // How would we run the getTuneUp method?
+    // car.getTuneUp()
+
+  </script>
+
+</body>
+
 </html>

@@ -1,0 +1,300 @@
+/* MY COLOURS
+#EB7E65 -- Coral
+#F9BD95 -- Peach
+#F8DCB7 -- Pale Yellow
+#A5B996 -- Olive
+#A9BBB8 -- Grey Blue 
+#D4E3DE -- Pale Grey Blue */
+
+/* RESPONSIVE FORMATING */
+
+/* Computer Screens Size */
+@media screen and (max-width: 980px) {
+  body {
+    background-color: blue;
+  }
+}
+
+/* Tablet Size */
+@media screen and (max-width: 768px) {
+  .wrapper {
+    max-width: 786px;
+    margin: 0px 25px;
+  }
+}
+
+/* Phone Size */
+@media screen and (max-width: 640px) {
+  body {
+    background-color: blue;
+  }
+}
+
+/* PAGE STYLE */
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+
+body {
+  background-image: url(../images/dust_scratches.png);
+}
+
+/* HEADER */
+
+/* Tablet Size */
+@media screen and (max-width: 768px) {
+  header {
+    margin: 0 auto;
+    padding: 0 200px;
+    background-color: green;
+    margin-bottom: 25px;
+  }
+
+  header::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+  .Logo {
+    width: 100px;
+    float: left;
+    padding: 10px 0;
+  }
+
+  nav {
+    float: right;
+  }
+
+  nav ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+  }
+
+  nav li {
+    display: inline-block;
+    margin-left: 50px;
+    padding-top: 25px;
+  }
+
+  nav a {
+    color: black;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+
+  nav a:hover {
+    color: #eb7e65;
+  }
+
+  .hvr-shadow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow;
+    transition-property: box-shadow;
+  }
+  .hvr-shadow:hover,
+  .hvr-shadow:focus,
+  .hvr-shadow:active {
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  }
+
+  .about,
+  .portfolio,
+  .Contact {
+    /* margin: auto; */
+    margin-bottom: 55px;
+    padding: 20px;
+    padding-bottom: 50px;
+    background-color: #d4e3de;
+    border: 2px solid #d4e3de;
+    border-radius: 10px;
+    line-height: 1.3em;
+  }
+}
+
+header {
+  margin: 0 auto;
+  padding: 0 200px;
+  background-color: #a9bbb8;
+  margin-bottom: 25px;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.Logo {
+  float: left;
+  padding: 10px 0;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 50px;
+  padding-top: 25px;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+nav a:hover {
+  color: #eb7e65;
+}
+
+.hvr-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+}
+.hvr-shadow:hover,
+.hvr-shadow:focus,
+.hvr-shadow:active {
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+}
+
+.about,
+.portfolio,
+.Contact {
+  /* margin: auto; */
+  margin-bottom: 55px;
+  padding: 20px;
+  padding-bottom: 50px;
+  background-color: #d4e3de;
+  border: 2px solid #d4e3de;
+  border-radius: 10px;
+  line-height: 1.3em;
+}
+
+/* Main Typography */
+
+h1,
+h2 {
+  font-family: 'Sanchez', serif;
+  font-weight: 600;
+  color: rgb(64, 70, 68);
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 26px;
+  padding: 17px 0;
+}
+
+p {
+  font-size: 16px;
+  color: #777777;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  color: #a5b996;
+  font-family: 'Poppins', sans-serif;
+}
+
+hr {
+  margin-bottom: 20px;
+}
+
+/* Image */
+
+.about img {
+  width: 200px;
+  float: left;
+  padding: 0 20px 20px 0;
+  justify-content: left;
+  border-radius: 50%;
+}
+
+.portfolioGrid {
+  columns: 2;
+}
+
+.imgPortfolio {
+  position: relative;
+  width: 100%;
+}
+
+.textOverlay {
+  position: relative;
+  width: 450px;
+  background-color: #4aaaa5;
+  color: white;
+  text-align: center;
+}
+
+/* FORM */
+input {
+  width: 100%;
+  padding: 10px 15px;
+  margin: 5px 0;
+  box-sizing: border-box;
+}
+
+label {
+  font-size: 16px;
+  color: #777777;
+  font-family: 'Poppins', sans-serif;
+}
+
+#message {
+  height: 200px;
+}
+
+button {
+  margin-top: 10px;
+  background-color: #4aaaa5;
+  border-radius: 10px;
+  padding: 10px 30px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* FOOTER */
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #666666;
+  border-top: 5px solid #a5b996;
+  padding: 25px 0;
+}
+
+.footer p {
+  color: white;
+  font-size: 14px;
+  text-align: center;
+}
