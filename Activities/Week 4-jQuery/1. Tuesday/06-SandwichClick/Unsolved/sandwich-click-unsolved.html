@@ -14,6 +14,9 @@
 
   <h1>Click to Eat Sandwich</h1>
   <h3 id="pbj">Peanut Butter Jelly</h3>
+  <!-- <p id='pbjYum'>You have eaten:
+    <span id="pbjEateb"></span> -->
+  </p>
   <h3 id="grilledcheese">Grilled Cheese</h3>
   <h3 id="roastbeef">Roast Beef</h3>
 
@@ -23,12 +26,15 @@
     // This code makes sure that the JavaScript doesn't get run until the HTML is finished loading
     // It's useful to become familiar with now.
 
-    $(document).ready(function() {
+    $(document).ready(function () {
 
       // VARIABLES
       // ====================================================================
       // Here we create variables for tracking the number of sandwiches eaten
       // ...
+      var pbjCounter = 0
+      var grilledcheeseCounter = 0
+      var roastbeefCounter = 0
 
 
       // ...
@@ -39,12 +45,21 @@
       // Inside each click event is the code to create an alert, update the counter, then show the updated count.
       // ...
 
+      $('#pbj').on('click', function () {
+        pbjCounter++;
+        alert('You have eaten' + pbjCounter + 'PB&J Sandwiches');
+      });
+
+      // $('#pbj').on('click', function () {
+      //   pbjCounter++;
+      //   alert('You"ve eaten ' + pbjCounter + 'PB&J sandwiches');
+      // });
 
       // ...
 
     });
 
-</script>
+  </script>
 
 </body>
 
