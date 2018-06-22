@@ -38,6 +38,21 @@
 
       <div class="col-lg-6">
 
+        <!-- Controls (His Powers) -->
+        <div id="cpPowers" class="card">
+          <h4 class="card-header">Check out his powers</h4>
+          <div class="card-body">
+            <div class="text-center">
+              <button class="btn btn-dark btn-lg fire-button">
+                <span class="fa fa-fire"></span> Fire</button>
+              <!-- <button class="btn btn-primary btn-lg water-button">
+                <span class="fa fa-plus"></span> Water</button>
+              <button class="btn btn-danger btn-lg heart-button">
+                <span class="fa fa-minus"></span> Heart</button> -->
+            </div>
+          </div>
+        </div>
+
         <!-- Controls (Superpower Grow/Shrink)-->
         <div id="sizeControls" class="card">
           <h4 class="card-header">Superpowers - Change Sizes!</h4>
@@ -105,96 +120,114 @@
 
         <!-- Captain Planet Image -->
         <img src="Assets/captain-planet.jpg" alt="" class="img captain-planet" style="position:absolute; top:50px; left: 80px; z-index: -20; height: 300px">
+        <!-- Fire Image -->
+        <div class="hidden">
+          <img src="Assets/Flame.png" alt="" class="img fire-power hidden">
+          <!-- position:absolute; top:50px; left: 80px; z-index: -20; height: 300px -->
+        </div>
+
       </div>
     </div>
   </div>
 
   <script>
 
-  // JavaScript function that wraps everything
-  $(document).ready(function() {
+    // JavaScript function that wraps everything
+    $(document).ready(function () {
 
-    var captainPlanet = $(".captain-planet");
+      var captainPlanet = $(".captain-planet");
 
-    // Gets Link for Theme Song
-    var audioElement = document.createElement("audio");
-    audioElement.setAttribute("src", "Assets/captainplanet24.mp3");
+      //Power Buttons
+      $(".fire-button").on("click", function () {
+        fadeoutfadein();
+        function fadeoutfadein() {
+          captainPlanet.fadeOut("slow");
+          $(".hidden").toggle()
+        }
 
-    // Theme Button
-    $(".theme-button").on("click", function() {
-      audioElement.play();
-    });
-    $(".pause-button").on("click", function() {
-      audioElement.pause();
-    });
 
-    // Size Buttons
-    $(".normal-button").on("click", function() {
-      captainPlanet.animate({ height: "300px" });
-    });
-    $(".grow-button").on("click", function() {
-      captainPlanet.animate({ height: "500px" });
-    });
-    $(".shrink-button").on("click", function() {
-      captainPlanet.animate({ height: "100px" });
-    });
+      });
 
-    // Visibility Buttons
-    $(".vis-button").on("click", function() {
-      captainPlanet.animate({ opacity: "1" });
-    });
-    $(".invis-button").on("click", function() {
-      captainPlanet.animate({ opacity: "0.05" });
-    });
+      // Gets Link for Theme Song
+      var audioElement = document.createElement("audio");
+      audioElement.setAttribute("src", "Assets/captainplanet24.mp3");
 
-    // Move Buttons
-    $(".up-button").on("click", function() {
-      captainPlanet.animate({ top: "-=200px" }, "normal");
-    });
-    $(".down-button").on("click", function() {
-      captainPlanet.animate({ top: "+=200px" }, "normal");
-    });
-    $(".left-button").on("click", function() {
-      captainPlanet.animate({ left: "-=200px" }, "normal");
-    });
-    $(".right-button").on("click", function() {
-      captainPlanet.animate({ left: "+=200px" }, "normal");
-    });
-    $(".back-button").on("click", function() {
-      captainPlanet.animate({ top: "50px", left: "80px" }, "fast");
-    });
+      // Theme Button
+      $(".theme-button").on("click", function () {
+        audioElement.play();
+      });
+      $(".pause-button").on("click", function () {
+        audioElement.pause();
+      });
 
-    // Keyboard move controls
-    $(document).keyup(function(e) {
-      switch (e.which) {
+      // Size Buttons
+      $(".normal-button").on("click", function () {
+        captainPlanet.animate({ height: "300px" });
+      });
+      $(".grow-button").on("click", function () {
+        captainPlanet.animate({ height: "500px" });
+      });
+      $(".shrink-button").on("click", function () {
+        captainPlanet.animate({ height: "100px" });
+      });
 
-      // Move Buttons (Keyboard Down)
-      case 40:
-        captainPlanet.animate({ top: "+=200px" }, "normal");
-        break;
+      // Visibility Buttons
+      $(".vis-button").on("click", function () {
+        captainPlanet.animate({ opacity: "1" });
+      });
+      $(".invis-button").on("click", function () {
+        captainPlanet.animate({ opacity: "0.05" });
+      });
 
-        // Move Buttons (Keyboard Right)
-      case 39:
-        captainPlanet.animate({ left: "+=200px" }, "normal");
-        break;
-
-        // Move Buttons (Keyboard Up)
-      case 38:
+      // Move Buttons
+      $(".up-button").on("click", function () {
         captainPlanet.animate({ top: "-=200px" }, "normal");
-        break;
-
-        // Move Buttons (Keyboard Left)
-      case 37:
+      });
+      $(".down-button").on("click", function () {
+        captainPlanet.animate({ top: "+=200px" }, "normal");
+      });
+      $(".left-button").on("click", function () {
         captainPlanet.animate({ left: "-=200px" }, "normal");
-        break;
+      });
+      $(".right-button").on("click", function () {
+        captainPlanet.animate({ left: "+=200px" }, "normal");
+      });
+      $(".back-button").on("click", function () {
+        captainPlanet.animate({ top: "50px", left: "80px" }, "fast");
+      });
 
-      default:
-        break;
-      }
+      // Keyboard move controls
+      $(document).keyup(function (e) {
+        switch (e.which) {
+
+          // Move Buttons (Keyboard Down)
+          case 40:
+            captainPlanet.animate({ top: "+=200px" }, "normal");
+            break;
+
+          // Move Buttons (Keyboard Right)
+          case 39:
+            captainPlanet.animate({ left: "+=200px" }, "normal");
+            break;
+
+          // Move Buttons (Keyboard Up)
+          case 38:
+            captainPlanet.animate({ top: "-=200px" }, "normal");
+            break;
+
+          // Move Buttons (Keyboard Left)
+          case 37:
+            captainPlanet.animate({ left: "-=200px" }, "normal");
+            break;
+
+          default:
+            break;
+        }
+      });
     });
-  });
 
   </script>
 
 </body>
+
 </html>
