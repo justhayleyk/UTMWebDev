@@ -1,0 +1,8 @@
+* Using a working example of the to-do application `1-student-do-todolist-solution.html` incorporate the use of `localStorage` to create data persistence.
+
+
+* **HINT:** You will need to selectively delete array elements to get this working properly. (Suggestion: Look into `.splice`)
+
+* **HINT:** You will need to take an array and dump the contents into localStorage (Suggestion: Use `JSON.stringify(todoArray)`).
+
+* **HINT:** Don't freak out. This is hard, but push yourselves as best you can!
