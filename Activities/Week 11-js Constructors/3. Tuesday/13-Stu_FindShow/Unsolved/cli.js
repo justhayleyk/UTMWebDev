@@ -1,24 +1,28 @@
-var TV = require("./tv");
+let TV = require('./tv');
 
-// Create a new TV object
-var tv = new TV();
+let tv = new TV();
 
-var search = process.argv[2];
-var term = process.argv.slice(3).join(" ");
+let args = process.argv;
+let action = args[2];
+let name = args.slice(3).join(' ');
 
-var tv = new TV();
+console.log(`User selected ${action}`);
+console.log(`${name}`);
 
-if (!search) {
-  search = "show";
-}
+switch (action) {
+  case 'show':
+    console.log(`Whoop whoop its a show`);
+    tv.findShow(name);
+    break;
 
-if (!term) {
-  term = "Andy Griffith";
-}
+  case 'actor':
+    console.log(`Lookie lookie`);
+    tv.findActor(name);
+    break;
 
-if (search === "show") {
-  console.log("Searching for TV Show");
-  tv.findShow(term);
-} else {
-  console.log("Searching for TV Actor");
+  default:
+    action = 'show';
+    name = 'Queen of the South';
+    tv.findShow(name);
+    break;
 }

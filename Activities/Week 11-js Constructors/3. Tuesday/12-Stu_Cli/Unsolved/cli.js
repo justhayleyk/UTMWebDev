@@ -1,2 +1,19 @@
 // Write code here to parse command line arguments and store them into variables
 // Add code to print whether the user is searching for an actor or tv show, along with the name of the actor or tv show they are searching for
+
+let args = process.argv;
+let action = args[2];
+let name = args.slice(3).join(' ');
+
+console.log(`User selected ${action}`);
+console.log(`${name}`);
+
+switch (action) {
+  case 'show':
+    console.log(`Whoop whoop its a show`);
+    break;
+
+  case 'actor':
+    console.log(`Lookie lookie`);
+    break;
+}
