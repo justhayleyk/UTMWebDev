@@ -1,0 +1,22 @@
+{
+  "name": "utmwebdev",
+  "version": "1.0.0",
+  "description": "This is a repo created to house all the activities I complete during this course.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CopperCo/UTMWebDev.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CopperCo/UTMWebDev/issues"
+  },
+  "homepage": "https://github.com/CopperCo/UTMWebDev#readme",
+  "dependencies": {
+    "mysql": "^2.16.0"
+  }
+}
