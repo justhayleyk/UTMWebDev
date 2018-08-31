@@ -1,0 +1,17 @@
+{
+  "name": "02-two-servers",
+  "version": "1.0.0",
+  "description": "* Using the previous example as a guide, create an app that has two web servers. * One that listens on port 7000 and one that listens on port 7500. * The one listening on port 7000 will always tell the user something good about themselves. * The one listening on 7500 will always tell the user something bad about themselves. * Make sure you create a Github repo and commit this code!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node servers.js",
+    "parse": "node parse.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "http": "0.0.0"
+  }
+}
