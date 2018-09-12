@@ -1,0 +1,35 @@
+<style media="screen">
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+  }
+
+  h2 {
+    color: darkmagenta;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  li,
+  p {
+
+    line-height: 1em
+  }
+
+  hr {
+    width: 25px
+  }
+</style>
+
+<h2>Our Icecreams available today are:</h2>
+
+<ul>
+  {{#each flavour }}
+  <li>Flavour: {{name}}
+    <p>${{price}}</p>
+    <p>Rating: {{awesomeness}}</p>
+  </li>
+  <hr> {{/each}}
+</ul>
