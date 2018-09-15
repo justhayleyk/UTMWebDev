@@ -10,6 +10,7 @@
       <button id="deleteCat">Delete</button>
     {{/if}}
   {{/each}}```
+- partial --> forms and footers are highly used as partial
 
 ## mySQL + Express
 - ```export PATH=${PATH}:/usr/local/mysql/bin/``` --> the command you put into your terminal to access mysql shell
