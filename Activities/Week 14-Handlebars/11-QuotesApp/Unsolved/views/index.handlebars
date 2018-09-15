@@ -19,7 +19,7 @@
 
 <h2>Add a Quote</h2>
 
-<form class="create-form">
+<form class="create-form" action="../public/assets/js/quptes.js" method="POST">
 
   <div class="form-group">
     <label for="auth">Author:</label>
@@ -31,5 +31,7 @@
     <textarea id="quo" name="quote" rows="8" cols="40"></textarea>
   </div>
 
-  <button type="submit">Add Quote</button>
+  <button id="addButton" type="submit">Add Quote</button>
 </form>
+
+
