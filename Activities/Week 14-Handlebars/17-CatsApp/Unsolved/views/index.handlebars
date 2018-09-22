@@ -5,7 +5,9 @@
 <ul>
   {{#each cats}}
     {{#unless sleepy}}
-      {{> cats/cat-block sleep=true}}
+      {{> cats/cat-block sleep=true}}      
+      <button data-id="{{id}}" class="deleteCat">Delete</button>
+
     {{/unless}}
   {{/each}}
 </ul>
@@ -16,6 +18,7 @@
   {{#each cats}}
     {{#if sleepy}}
       {{> cats/cat-block sleep=false}}
+      <button id="deleteCat">Delete</button>
     {{/if}}
   {{/each}}
 </ul>
