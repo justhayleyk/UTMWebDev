@@ -1,4 +1,4 @@
-# Week 16+17
+# Week 16
 
 ## Linting
 
