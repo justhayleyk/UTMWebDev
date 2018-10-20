@@ -1,5 +1,9 @@
 body {
-  background-color: #6a5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+  height: auto;
+  background-color: coral;
+  );
 }
 
 table,
@@ -11,7 +15,7 @@ td {
 
 table {
   width: 500px;
-  background-color: antiquewhite;
+  background-color: rgb(255, 245, 233);
 }
 
 td {
@@ -24,6 +28,8 @@ button {
   height: 50px;
   margin-top: 20px;
   margin-bottom: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 10px;
 }
 
 .active {

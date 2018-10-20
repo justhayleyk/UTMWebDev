@@ -2,16 +2,17 @@
 
 ## Instructions
 
-* Go back to your classroom database.
+- Go back to your classroom database.
 
 ```
-fill in mongo commands here
+db
+use classroom
 ```
 
 1. You've decided to take on a new hobby. Add Extreme Basketweaving to your array of hobbies.
 
 ```
-fill in mongo commands here
+db.students.update({name: "Steve"}, {$push: {"hobbies":"Extreme Basketweaving"}})
 ```
 
 2. While practicing for your Extreme Basketweaving Competition, you broke the computer of the person next to you. They're using a new Operating System now. Change their os field.

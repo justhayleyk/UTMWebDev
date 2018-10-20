@@ -3,6 +3,7 @@
   1. Make a reusable function for creating a table body in index.html with the results from your MongoDB query
   Each row should have info for one animal.
 
+
   2. Make two AJAX functions that fire when users click the two buttons on index.html.
       a. When the user clicks the Weight button, the table should display the animal data sorted by weight.
       b. When the user clicks the Name button, the table should display the animal data sorted by name.
@@ -18,11 +19,37 @@
 
 // We'll be rewriting the table's data frequently, so let's make our code more DRY
 // by writing a function that takes in data (JSON) and creates a table body
-function displayResults(data) {
+function displayResults(animals) {
+  $('tbody').empty();
+
   // Add to the table here...
+
+  animals.forEach(function(animal) {
+    // Append each of the animal's properties to the table
+    var tr = $('<tr>').append(
+      $('<td>').text(animal.name),
+      $('<td>').text(animal.weight)
+    );
+
+    $('tbody').append(tr);
+  });
 }
 
-$.getJSON("/all", function(data) {
+$.getJSON('/all', function(data) {
   // Call our function to generate a table body
   displayResults(data);
+});
+
+$('#weight-sort').on('click', function() {
+  $.getJSON('/weight', function(data) {
+    // Call our function to generate a table body
+    displayResults(data);
+  });
+});
+
+$('#name-sort').on('click', function() {
+  $.getJSON('/name', function(data) {
+    // Call our function to generate a table body
+    displayResults(data);
+  });
 });
