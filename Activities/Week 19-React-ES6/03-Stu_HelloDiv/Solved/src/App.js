@@ -1,5 +1,5 @@
-import React from "react";
-import HelloDiv from "./components/HelloDiv";
+import React from 'react';
+import HelloDiv from './components/HelloDiv';
 
 const App = () => <HelloDiv />;
 
